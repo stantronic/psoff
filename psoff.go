@@ -47,7 +47,7 @@ func choose(ss []string, test func(string) bool) (ret []string) {
 
 func handleInputErrors() {
 	if len(os.Args) < 2 {
-		exitIfError(errors.New("no arguments were given"), "")
+		exitIfError(errors.New("No arguments received"), "Usage: psoff <port number>")
 	}
 }
 
