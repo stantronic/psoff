@@ -1,15 +1,15 @@
 package main
 
 import (
-	"strings"
-	"os"
-	"fmt"
-	"os/exec"
+	"bufio"
 	"bytes"
 	"errors"
-	"syscall"
+	"fmt"
+	"os"
+	"os/exec"
 	"strconv"
-	"bufio"
+	"strings"
+	"syscall"
 )
 
 type process struct {
@@ -52,14 +52,12 @@ func handleInputErrors() {
 }
 
 func (p process) print() string {
-	return concat("Process ",p.pid,": [ ",p.name," ] is running on port ",p.port)
+	return concat("Process ", p.pid, ": [ ", p.name, " ] is running on port ", p.port)
 }
-
-
 
 func concat(words ...string) string {
 	var b strings.Builder
-	for _,word := range words {
+	for _, word := range words {
 		b.WriteString(word)
 	}
 	return b.String()
