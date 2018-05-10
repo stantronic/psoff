@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-echo "Installing psoff to /usr/local/bin"
-cp $(pwd)/psoff /usr/local/bin
+echo -e "Building psoff binary"
+go build
+echo -e "Symlinking $(pwd)/psoff to /usr/local/bin"
+ln -sf $(pwd)/psoff /usr/local/bin
