@@ -20,11 +20,11 @@ To install do the following:
 
 just enter the following into a bash terminal:
 
-```git clone https://github.com/stantronic/psoff.git && ./psoff/install.sh```
+```git clone https://github.com/stantronic/psoff.git && cd psoff && ./install.sh```
 
 #### Build and install (Mac and Linux):
 _requires that you have go installed_
 
 Enter the following into a bash terminal:
 
-```git clone https://github.com/stantronic/psoff.git && ./psoff/build_and_install.sh```
+```git clone https://github.com/stantronic/psoff.git && cd psoff && ./build_and_install.sh```
