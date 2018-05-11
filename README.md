@@ -1,5 +1,5 @@
 # PsOff
-### _A Mac command-line tool to clear your ports_
+### _A command-line tool for Mac and Linux to clear your ports_
 
 Ever try to launch a process and are blocked by an error like...
 
@@ -14,6 +14,17 @@ Would you like to kill it? [Y/n] Y
 The process has been killed without mercy!
 ```
 
-To install just enter the following into your terminal:
+To install do the following:
 
-```git clone https://github.com/stantronic/psoff.git && cd psoff && ./install.sh```
+#### Direct binary installation (Mac only):
+
+just enter the following into a bash terminal:
+
+```git clone https://github.com/stantronic/psoff.git && ./psoff/install.sh```
+
+#### Build and install (Mac and Linux):
+_requires that you have go installed_
+
+Enter the following into a bash terminal:
+
+```git clone https://github.com/stantronic/psoff.git && ./psoff/build_and_install.sh```
